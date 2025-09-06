@@ -1,0 +1,21 @@
+public class GroceryTotal {
+    public static void main(String[] args) {
+      double tomatoPricePerKg = 36.0;
+        double ricePricePerKg = 45.50;
+        double onionPricePerKg = 20.0;
+        
+        double tomatoQty = 5.0;
+        double riceQty = 2.0;
+        double onionQty = 5.0;
+        
+        double tomatoTotal = tomatoPricePerKg * tomatoQty;
+        double riceTotal = ricePricePerKg * riceQty;
+        double onionTotal = onionPricePerKg * onionQty;
+        double grandTotal = tomatoTotal + riceTotal + onionTotal;
+
+        System.out.println("Tomato total cost: " + tomatoTotal);
+        System.out.println("Rice total cost: " + riceTotal);
+        System.out.println("Onion total cost: " + onionTotal);
+        System.out.println("Grand total: " + grandTotal);
+    }
+}
