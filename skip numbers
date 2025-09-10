@@ -1,0 +1,11 @@
+class skipnumbers{
+public static void main(string[]args){
+int i,m=50,n=100,k=2;
+for(i=m;i<=n;i+=(k+1)){
+System.out.print(i);
+if(i+(k+1)<=n){
+System.out.print(" ");
+}
+}
+}
+}
