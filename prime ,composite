@@ -1,0 +1,26 @@
+public class PrimeCompositeCounter {
+    public static void main(String[] args) {
+        int arr[] = {4, 54, 29, 71, 7, 59, 98, 23};
+        int com = 0, pri = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            int num = arr[i];
+            if (num <= 1) continue; // skip 0 and 1
+
+            int c = 0;
+            for (int j = 1; j <= num; j++) {
+                if (num % j == 0) {
+                    c++;
+                }
+            }
+
+            if (c == 2) // only divisible by 1 and itself
+                pri++;
+            else
+                com++;
+        }
+
+        System.out.println("Composite number: " + com);
+        System.out.println("Prime number: " + pri);
+    }
+}
