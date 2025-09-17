@@ -1,0 +1,16 @@
+import java.util.Arrays;
+
+public class NthLargest {
+    public static void main(String[] args) {
+        int[] arr = {12, 5, 20, 8, 15, 30};
+        int n = 2; // Change this value for nth largest
+
+        if (n > arr.length) {
+            System.out.println("Error: n is greater than array size.");
+        } else {
+            Arrays.sort(arr); // sort in ascending order
+            int nthLargest = arr[arr.length - n]; // pick nth from last
+            System.out.println(n + "th largest number is: " + nthLargest);
+        }
+    }
+}
